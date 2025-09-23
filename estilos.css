@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('./Fontes/Lato/Lato-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(20, 0, 30);
+    color: rgb(240, 240, 240);
+    font-family: 'Roboto', sans-serif;
+    border: 8px solid rgb(0, 255, 115);
+}
+
+.menu {
+    list-style-type: none;
+    background-color: rgb(30, 0, 50);
+    border: 2px solid rgb(102, 0, 153);
+    float: left;
+    width: 100%;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+    border-right: 1px solid rgb(0, 255, 115);
+}
+
+.menu li a {
+    color: rgb(0, 255, 115);
+    text-decoration: none;
+    padding: 15px 30px;
+    display: block;
+}
+
+.menu li a:hover {
+    background: rgb(102, 0, 153);
+    color: rgb(0, 255, 115);
+    box-shadow: 0px 0px 15px rgb(0, 255, 115);
+}
+
+main {
+    width: 90%;
+    margin: 20px auto; 
+}
+
+.banner {
+    width: 100%;
+    border: 4px solid rgb(102, 0, 153);
+}
+
+.apresentacao, .destaques, .midia {
+    background-color: rgb(30, 10, 45);
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid rgb(102, 0, 153);
+}
+
+h2 {
+    color: rgb(0, 255, 115);
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.destaques {
+    display: flex;
+    justify-content: space-around;
+}
+
+.destaques figure {
+    width: 45%;
+    text-align: center;
+}
+
+.destaques img {
+    max-width: 100%;
+    border: 2px solid rgb(0, 255, 115);
+}
+
+.destaques figcaption {
+    margin-top: 10px;
+    color: rgb(200, 200, 200);
+    font-size: 14px;
+}
+
+.midia {
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(15, 0, 25);
+    color: rgb(150, 150, 150);
+    padding: 30px 0;
+    margin-top: 40px;
+    border-top: 4px solid rgb(102, 0, 153);
+    text-align: center;
+}
+
+.footer-redes-sociais a {
+    color: rgb(0, 255, 115);
+    text-decoration: none;
+    font-size: 28px;
+    margin: 0 15px;
+}
+
+.footer-redes-sociais a:hover {
+    color: rgb(102, 0, 153);
+}
+
+.footer-informacoes {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+a[href="#topo"] {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(102, 0, 153);
+    color: rgb(0, 255, 115);
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/*---PÁGINA DE PRODUTO--- */
+
+.produto-container {
+    display: flex; 
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgb(30, 10, 45);
+    max-width: 1200px;
+    gap: 40px; 
+}
+
+.produto-galeria {
+    flex: 1; 
+}
+
+.galeria-principal video,
+.galeria-principal img {
+    width: 100%;
+    border: 2px solid rgb(102, 0, 153);
+}
+
+.galeria-thumbnails {
+    display: flex;
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+.galeria-thumbnails img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid rgb(0, 255, 115);
+    cursor: pointer;
+}
+
+.galeria-thumbnails img:hover {
+    border-color: rgb(255, 255, 255);
+}
+
+.produto-info-compra {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.produto-info h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+}
+
+.produto-info .marca {
+    font-size: 14px;
+    color: rgb(200, 200, 200);
+}
+
+.preco {
+    margin: 20px 0;
+}
+.preco-principal {
+    display: block;
+    font-size: 32px;
+    color: rgb(0, 255, 115);
+    font-weight: bold;
+}
+.preco-parcelado {
+    font-size: 14px;
+}
+
+.produto-destaques {
+    padding-left: 20px;
+}
+.produto-destaques li {
+    margin-bottom: 10px;
+}
+
+.produto-caixa-compra {
+    border: 1px solid rgb(102, 0, 153);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.estoque-ok {
+    color: rgb(0, 255, 115);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.quantidade, .vendedor-info {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.btn-adicionar, .btn-comprar {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btn-adicionar {
+    background-color: rgb(0, 255, 115);
+    color: rgb(20, 0, 30);
+}
+.btn-comprar {
+    background-color: rgb(102, 0, 153);
+    color: white;
+}
+
+.produto-descricao, .produto-specs {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgb(30, 10, 45);
+}
+
+.produto-specs table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+.produto-specs td {
+    padding: 10px;
+    border-bottom: 1px solid rgb(102, 0, 153);
+}
+.produto-specs tr:nth-child(even) { 
+    background-color: rgb(40, 20, 55);
+}
+.produto-specs td:first-child { 
+    font-weight: bold;
+    width: 30%;
+}
