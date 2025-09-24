@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../estilos.css">
+    <link rel="icon" href="../Imagens/logo.jpg" type="image/png">
+    <title>Contato - Nexus Games</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body id="topo">
+
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../Paginas/ps4.html">PlayStation</a></li>
+                <li><a href="../Paginas/nintendo.html">Nintendo</a></li>
+                <li><a href="../Paginas/xbox.html">Xbox</a></li>
+                <li><a href="../Paginas/galeria.html">Galeria</a></li>
+                <li><a href="../Paginas/sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="apresentacao">
+            <h2>Fale Conosco</h2>
+            <p>Sua opinião é fundamental para nós. A Nexus Games se orgulha de oferecer não apenas os melhores produtos, mas também um atendimento ao cliente de primeira linha. Este canal é a sua linha direta com nossa equipe, pronta para resolver qualquer questão de forma rápida e eficiente.</p>
+            <p>Seja para tirar dúvidas sobre um produto, solicitar suporte técnico para um pedido, enviar sugestões ou fazer uma reclamação, estamos aqui para ouvir. Nosso time é formado por gamers apaixonados, assim como você, e entendemos a importância de cada detalhe na sua experiência de compra.</p>
+            <p>Utilize o formulário abaixo para detalhar sua solicitação. Quanto mais informações você nos fornecer, mais rápido poderemos ajudar. O prazo de resposta padrão da nossa equipe de suporte é de até 24 horas úteis, mas sempre faremos o possível para responder o mais breve possível.</p>
+            <p>Agradecemos seu contato e a confiança em nosso trabalho. A sua satisfação é o que nos move a continuar buscando a excelência em tudo o que fazemos, desde a seleção de produtos em nosso catálogo até o suporte pós-venda. Vamos juntos construir a melhor comunidade gamer.</p>
+        </section>
+
+        <section class="destaques">
+            <figure>
+                <img src="../Imagens/equipe.png" alt="Foto da equipe de suporte da Nexus Games">
+                <figcaption>Nossa equipe de suporte pronta para te atender.</figcaption>
+            </figure>
+            <figure>
+                <img src="../Imagens/warehouse.png" alt="Foto do centro de distribuição da Nexus Games">
+                <figcaption>Logística otimizada para sua entrega.</figcaption>
+            </figure>
+        </section>
+
+
+
+        <form class="formulario-contato" action="#" method="post">
+            <h2>Formulário de Contato e Cadastro</h2>
+
+            <fieldset>
+                <legend>Informações de Contato</legend>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+                
+                <label for="nascimento">Data de Nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento">
+            </fieldset>
+
+            <fieldset>
+                <legend>Detalhes da Mensagem</legend>
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto">
+                    <option value="duvida">Dúvida sobre Produto</option>
+                    <option value="suporte">Suporte Técnico</option>
+                    <option value="financeiro">Financeiro</option>
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="pedido">Número do Pedido (se aplicável):</label>
+                <input type="text" id="pedido" name="pedido" pattern="[0-9]{8}">
+
+                <label for="mensagem">Sua Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                
+                <label for="arquivo">Anexar um arquivo (captura de tela, etc.):</label>
+                <input type="file" id="arquivo" name="arquivo">
+            </fieldset>
+
+            <fieldset>
+                <legend>Cadastro Opcional</legend>
+                <p>Deseja criar uma conta para agilizar futuras compras?</p>
+                <input type="radio" id="cadastro_sim" name="quer_cadastro" value="sim">
+                <label for="cadastro_sim">Sim</label>
+                <input type="radio" id="cadastro_nao" name="quer_cadastro" value="nao" checked>
+                <label for="cadastro_nao">Não</label>
+
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" id="username" name="username">
+
+                <label for="senha">Crie uma Senha:</label>
+                <input type="password" id="senha" name="senha">
+                
+                <label for="senha_confirma">Confirme a Senha:</label>
+                <input type="password" id="senha_confirma" name="senha_confirma">
+                
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep">
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco">
+
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" name="numero">
+
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" name="complemento">
+                
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade">
+
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    </select>
+                
+                <p>Quais seus gêneros de jogos favoritos?</p>
+                <input type="checkbox" id="genero_rpg" name="generos" value="rpg"><label for="genero_rpg">RPG</label>
+                <input type="checkbox" id="genero_acao" name="generos" value="acao"><label for="genero_acao">Ação</label>
+                <input type="checkbox" id="genero_esporte" name="generos" value="esporte"><label for="genero_esporte">Esporte</label>
+            </fieldset>
+            
+            <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-redes-sociais">
+             <a href="#" aria-label="Link para o nosso Instagram"><i class="fa-brands fa-instagram"></i></a>
+             <a href="#" aria-label="Link para o nosso Twitter"><i class="fa-brands fa-twitter"></i></a>
+             <a href="#" aria-label="Link para o nosso Facebook"><i class="fa-brands fa-facebook"></i></a>
+             <a href="#" aria-label="Link para o nosso canal na Twitch"><i class="fa-brands fa-twitch"></i></a>
+        </div>
+        <div class="footer-informacoes">
+             <p>&copy; 2025 Nexus Games. Todos os direitos reservados.</p>
+             <p>CNPJ: 00.000.000/0001-00 | Endereço Fictício, 123 - Cidade Gamer, BR</p>
+        </div>
+    </footer>
+
+    <a href="#topo">Voltar ao topo</a>
+</body>
+</html>
